@@ -9,7 +9,7 @@ def extract_index_nparray(nparray):
         break
     return index 
 
-img = cv2.imread("C:\\Users\\SUBHASMITA\\Desktop\\Image Processing\\tony.jpg", 1)
+img = cv2.imread("C:\\Users\\SUBHASMITA\\Desktop\\Image Processing\\cruise.jpg", 1)
 img2  = cv2.imread("C:\\Users\\SUBHASMITA\\Desktop\\Image Processing\\tom_holland.jpg", 1)
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 img2_gray = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
@@ -45,12 +45,7 @@ for face in faces:
     face_image_1 = cv2.bitwise_and(img, img, mask = mask)
 
     #delaunay triangulation
-    """
-    checking the boundary area around the facial hull
-    rectangles = cv2.boundingRect(hull)
-    (x, y , w, h) = rectangles
-    cv2.rectangle(img, (x,y), (x+w, y+h), (0, 255, 0))
-    """
+
     rect = cv2.boundingRect(hull)
     subdiv = cv2.Subdiv2D(rect)
     subdiv.insert(landmarks_points)
@@ -137,10 +132,10 @@ for triangle_index in indexes_triangles:
     cv2.fillConvexPoly(crop_tr1_mask, points, 255)
     #cropped_triangle = cv2.bitwise_and(cropped_triangle, cropped_triangle, mask = crop_tr1_mask)
 
-    cv2.line(img, tr1_pt1, tr1_pt2, (0, 0, 255), 1)
-    cv2.line(img, tr1_pt3, tr1_pt2, (0, 0, 255), 1)
-    cv2.line(img, tr1_pt1, tr1_pt3, (0, 0, 255), 1)
-    lines_space = cv2.bitwise_and(img, img, mask=lines_space_mask)
+    #cv2.line(img, tr1_pt1, tr1_pt2, (0, 0, 255), 1)
+    #cv2.line(img, tr1_pt3, tr1_pt2, (0, 0, 255), 1)
+    #cv2.line(img, tr1_pt1, tr1_pt3, (0, 0, 255), 1)
+    #lines_space = cv2.bitwise_and(img, img, mask=lines_space_mask)
 
 
 #delaunay triangulation of second face 
