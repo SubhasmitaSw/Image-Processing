@@ -21,7 +21,7 @@ facial characteristics and swap them with other person's facial characters, this
 
 ## Steps To Contribute
 
-1. Fork it from here (<https://github.com/Ask-Subhasmita/Image-Processing>)
+1. Fork it from here (<https://github.com/SubhasmitaSw/Image-Processing>)
 2. clone (`git clone 'url' `)
 2. Create your feature branch (`git checkout -b branch`)
 3. Commit your changes (`git commit -m 'Add some modification message'`)
@@ -30,9 +30,9 @@ facial characteristics and swap them with other person's facial characters, this
 
 ## Meta
 
-Subhasmita Swain – [@subh117x](https://twitter.com/subh117x) – subhasmitaswain232@gmail.com
+Subhasmita Swain – [@iam_subhasmita](https://twitter.com/iam_subhasmita) – subhasmitaswain232@gmail.com
 
-[https://github.com/Ask-Subhasmita](https://github.com/Ask-Subhasmita)
+[https://github.com/SubhasmitaSw](https://github.com/SubhasmitaSw)
 
 
 
